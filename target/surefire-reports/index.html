@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Weather_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Weather Suite</span>
+              <span class="suite-name border-failed">Weather Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Weather_Suite" class="navigator-link ">
-                    <span>D:\WORKSPACE\API_workspace\com.org.api\testng.xml</span>
+                    <span>D:\GitHubProjects\MavenAPI\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Weather_Suite" class="hide-methods failed suite-Weather_Suite"> (hide)</a> <!-- hide-methods failed suite-Weather_Suite -->
+                      <a href="#" panel-name="suite-Weather_Suite" class="show-methods failed suite-Weather_Suite"> (show)</a> <!-- show-methods failed suite-Weather_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Weather_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Weather_Suite" title="API_PROJECT.com.org.api.ApiParameter" class="method navigator-link" hash-for-method="Test004">Test004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Weather_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,11 +129,6 @@
                         <a href="#" panel-name="suite-Weather_Suite" title="API_PROJECT.com.org.api.ApiParameter" class="method navigator-link" hash-for-method="Test003">Test003</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Weather_Suite" title="API_PROJECT.com.org.api.ApiParameter" class="method navigator-link" hash-for-method="Test004">Test004</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Weather_Suite -->
                   </li>
                 </ul>
@@ -132,28 +141,49 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Weather_Suite" class="panel Weather_Suite">
-          <div class="suite-Weather_Suite-class-passed">
+          <div class="suite-Weather_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">API_PROJECT.com.org.api.ApiParameter</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test003">
-                  </a> <!-- Test003 -->
-                  <span class="method-name">Test003</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="Test004">
                   </a> <!-- Test004 -->
                   <span class="method-name">Test004</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:238)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at API_PROJECT.com.org.api.ApiParameter.Test004(ApiParameter.java:42)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Weather_Suite-class-passed -->
+          </div> <!-- suite-Weather_Suite-class-failed -->
           <div class="suite-Weather_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -176,10 +206,25 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Weather_Suite-class-passed -->
+          <div class="suite-Weather_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">API_PROJECT.com.org.api.ApiParameter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test003">
+                  </a> <!-- Test003 -->
+                  <span class="method-name">Test003</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Weather_Suite-class-passed -->
         </div> <!-- panel Weather_Suite -->
         <div panel-name="test-xml-Weather_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\WORKSPACE\API_workspace\com.org.api\testng.xml</span>
+            <span class="header-content">D:\GitHubProjects\MavenAPI\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -233,19 +278,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Test001')
 data.setCell(0, 2, 'API_PROJECT.com.org.api.weatherget')
-data.setCell(0, 3, 9882);
+data.setCell(0, 3, 9820);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Test002')
 data.setCell(1, 2, 'API_PROJECT.com.org.api.weatherget')
-data.setCell(1, 3, 4983);
+data.setCell(1, 3, 4789);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Test004')
 data.setCell(2, 2, 'API_PROJECT.com.org.api.ApiParameter')
-data.setCell(2, 3, 2020);
+data.setCell(2, 3, 2071);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Test003')
 data.setCell(3, 2, 'API_PROJECT.com.org.api.ApiParameter')
-data.setCell(3, 3, 1567);
+data.setCell(3, 3, 1591);
 window.suiteTableData['Weather_Suite']= { tableData: data, tableDiv: 'times-div-Weather_Suite'}
 return data;
 }
@@ -283,18 +328,20 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test002</span>
-                <span class="method-start">11460 ms</span>
+                <span class="method-start">10486 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">API_PROJECT.com.org.api.ApiParameter</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Test003</span>
-                <span class="method-start">16497 ms</span>
+                <span class="method-start">15304 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Test004</span>
-                <span class="method-start">18140 ms</span>
+                <span class="method-start">16914 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

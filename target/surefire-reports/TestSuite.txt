@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.949 s - in TestSuite
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.319 s <<< FAILURE! - in TestSuite
+Test004(API_PROJECT.com.org.api.ApiParameter)  Time elapsed: 2.143 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <200>.
+
+	at API_PROJECT.com.org.api.ApiParameter.Test004(ApiParameter.java:42)
+
