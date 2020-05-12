@@ -22,7 +22,7 @@ public class ApiParameter {
 		
 		int code = resp.getStatusCode();
 
-		if (code==201) {
+		if (code==200) {
 			System.out.println("API working ");
 			System.out.println("Status code " +code);
 		} else {
@@ -39,6 +39,6 @@ public class ApiParameter {
                 queryParam("appid", "439d4b804bc8187953eb36d2a8c26a02"). 
 			get(str).
 			then().
-			assertThat().statusCode(200);
+			assertThat().statusCode(201);
 		}
 }
