@@ -22,7 +22,7 @@ public class ApiParameter {
 		
 		int code = resp.getStatusCode();
 
-		if (code==200) {
+		if (code==201) {
 			System.out.println("API working ");
 			System.out.println("Status code " +code);
 		} else {
