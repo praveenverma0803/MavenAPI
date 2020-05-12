@@ -1,0 +1,5 @@
+"Status","Name","Duration in ms","Description"
+"failed","API_PROJECT.com.org.api.ApiParameter.Test004","1859",""
+"passed","API_PROJECT.com.org.api.weatherget.Test001","6455",""
+"passed","API_PROJECT.com.org.api.ApiParameter.Test003","1450",""
+"passed","API_PROJECT.com.org.api.weatherget.Test002","4721",""

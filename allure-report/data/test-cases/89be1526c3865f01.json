@@ -1,0 +1,61 @@
+{
+  "uid" : "89be1526c3865f01",
+  "name" : "Test003",
+  "fullName" : "API_PROJECT.com.org.api.ApiParameter.Test003",
+  "historyId" : "2a8aa45fbbb1a4919eaa57a738a05ae8",
+  "time" : {
+    "start" : 1589144445623,
+    "stop" : 1589144447073,
+    "duration" : 1450
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "API_PROJECT.com.org.api.ApiParameter"
+  }, {
+    "name" : "testClass",
+    "value" : "API_PROJECT.com.org.api.ApiParameter"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test003"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "API_PROJECT.com.org.api.ApiParameter"
+  }, {
+    "name" : "host",
+    "value" : "PP-PC"
+  }, {
+    "name" : "thread",
+    "value" : "7468@PP-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "89be1526c3865f01.json",
+  "parameterValues" : [ ]
+}

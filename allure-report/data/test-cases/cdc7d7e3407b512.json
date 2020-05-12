@@ -1,0 +1,61 @@
+{
+  "uid" : "cdc7d7e3407b512",
+  "name" : "Test002",
+  "fullName" : "API_PROJECT.com.org.api.weatherget.Test002",
+  "historyId" : "7d396602f853256b0448050132b9d153",
+  "time" : {
+    "start" : 1589144440881,
+    "stop" : 1589144445602,
+    "duration" : 4721
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "API_PROJECT.com.org.api.weatherget"
+  }, {
+    "name" : "testClass",
+    "value" : "API_PROJECT.com.org.api.weatherget"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test002"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "API_PROJECT.com.org.api.weatherget"
+  }, {
+    "name" : "host",
+    "value" : "PP-PC"
+  }, {
+    "name" : "thread",
+    "value" : "7468@PP-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cdc7d7e3407b512.json",
+  "parameterValues" : [ ]
+}

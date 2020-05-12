@@ -1,0 +1,69 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Suite",
+    "children" : [ {
+      "name" : "Test",
+      "children" : [ {
+        "name" : "API_PROJECT.com.org.api.weatherget",
+        "children" : [ {
+          "name" : "Test001",
+          "uid" : "96181fc849078f66",
+          "parentUid" : "5685fce79dcf03b80751e2ccd4a71f9e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1589144433981,
+            "stop" : 1589144440436,
+            "duration" : 6455
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Test002",
+          "uid" : "cdc7d7e3407b512",
+          "parentUid" : "5685fce79dcf03b80751e2ccd4a71f9e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1589144440881,
+            "stop" : 1589144445602,
+            "duration" : 4721
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5685fce79dcf03b80751e2ccd4a71f9e"
+      }, {
+        "name" : "API_PROJECT.com.org.api.ApiParameter",
+        "children" : [ {
+          "name" : "Test003",
+          "uid" : "89be1526c3865f01",
+          "parentUid" : "d3de8dfb7fc2d37a7e59a6b372f0790e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1589144445623,
+            "stop" : 1589144447073,
+            "duration" : 1450
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Test004",
+          "uid" : "302eb4d7deae71a5",
+          "parentUid" : "d3de8dfb7fc2d37a7e59a6b372f0790e",
+          "status" : "failed",
+          "time" : {
+            "start" : 1589144447083,
+            "stop" : 1589144448942,
+            "duration" : 1859
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d3de8dfb7fc2d37a7e59a6b372f0790e"
+      } ],
+      "uid" : "7314231e84d67a341867b5c9d3f928d2"
+    } ],
+    "uid" : "29f4dcc45a0e26cd7c7462063cee854b"
+  } ]
+}
